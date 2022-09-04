@@ -4,9 +4,7 @@ package com.gesinv.gestioninventario.modelo;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "categoria")
@@ -14,7 +12,7 @@ import javax.persistence.Table;
 @Getter
 
 public class Categoria {
-    @Id
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idCategoria;
     private String descripcion;
 }

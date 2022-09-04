@@ -3,9 +3,7 @@ package com.gesinv.gestioninventario.modelo;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "proveedor")
@@ -13,7 +11,7 @@ import javax.persistence.Table;
 @Getter
 
 public class Proveedor {
-    @Id
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idProveedor;
     private String nombre;
     private String direccion;

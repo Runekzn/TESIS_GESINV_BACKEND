@@ -11,7 +11,8 @@ import javax.persistence.*;
 @Getter
 
 public class Proveedor {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id 
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idProveedor;
     private String nombre;
     private String direccion;

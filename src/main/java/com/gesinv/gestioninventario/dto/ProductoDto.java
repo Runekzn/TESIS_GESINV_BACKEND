@@ -21,8 +21,9 @@ public class ProductoDto {
     private Integer stock;
     private String imagen;
     private Integer iva;
-    private Proveedor proveedor;
-    private Categoria categoria;
-    private Marca marca;
-    private Zona zona;
+    private Integer idProveedor;
+    private Long idCategoria;
+    private Long idMarca;
+    private Long idZona;
+    
 }

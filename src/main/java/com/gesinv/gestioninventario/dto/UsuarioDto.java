@@ -10,7 +10,7 @@ import java.util.List;
 @Setter
 
 public class UsuarioDto {
-    private Long idUsuario;
+    private Integer idUsuario;
     private String nombre;
     private String contraseña;
     private Boolean estado;

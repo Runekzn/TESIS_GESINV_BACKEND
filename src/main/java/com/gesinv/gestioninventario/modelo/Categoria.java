@@ -13,6 +13,6 @@ import javax.persistence.*;
 
 public class Categoria {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idCategoria;
+    private Integer idCategoria;
     private String descripcion;
 }

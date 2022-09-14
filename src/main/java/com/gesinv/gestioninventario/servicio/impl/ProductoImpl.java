@@ -1,5 +1,6 @@
 package com.gesinv.gestioninventario.servicio.impl;
 
+import com.gesinv.gestioninventario.exception.InventarioException;
 import com.gesinv.gestioninventario.modelo.Producto;
 import com.gesinv.gestioninventario.repository.IProductoRepo;
 import com.gesinv.gestioninventario.servicio.IProductoServicio;
@@ -16,27 +17,27 @@ public class ProductoImpl implements IProductoServicio {
     private IProductoRepo productoRepo;
 
     @Override
-    public Producto anadir(Producto producto) {
+    public Producto anadir(Producto producto) throws InventarioException {
         return productoRepo.save(producto);
     }
 
     @Override
-    public Producto modificar(Producto producto) {
+    public Producto modificar(Producto producto) throws InventarioException {
         return productoRepo.save(producto);
     }
 
     @Override
-    public void eliminar(Producto producto) {
-        productoRepo.delete(producto);
+    public void eliminar(Integer Id) throws InventarioException {
+        productoRepo.deleteById(Id);
     }
 
     @Override
-    public Producto buscarPorId(Long id) {
+    public Producto buscarPorId(Integer id) throws InventarioException {
         return productoRepo.findById(id).orElse(null);
     }
 
     @Override
-    public List<Producto> listar() {
+    public List<Producto> listar() throws InventarioException{
         return productoRepo.findAll();
     }
 }

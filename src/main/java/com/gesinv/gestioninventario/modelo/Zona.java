@@ -11,6 +11,6 @@ import javax.persistence.*;
 @Getter
 public class Zona {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idZona;
+    private Integer idZona;
     private String descripcion;
 }

@@ -12,7 +12,7 @@ import java.util.List;
 @Getter
 public class Rol {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idRol;
+    private Integer idRol;
     private String nombre;
 
 

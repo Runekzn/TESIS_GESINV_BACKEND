@@ -7,6 +7,6 @@ import lombok.Setter;
 @Setter
 
 public class RolDto {
-    private Long idRol;
+    private Integer idRol;
     private String nombre;
 }

@@ -8,6 +8,6 @@ import lombok.Setter;
 @Setter
 
 public class ZonaDto {
-    private Long idZona;
+    private Integer idZona;
     private String descripcion;
 }

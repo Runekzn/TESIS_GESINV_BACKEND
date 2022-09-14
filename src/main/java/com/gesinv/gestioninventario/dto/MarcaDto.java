@@ -6,6 +6,6 @@ import lombok.Setter;
 @Setter
 @Getter
 public class MarcaDto {
-    private Long idMarca;
+    private Integer idMarca;
     private String descripcion;
 }

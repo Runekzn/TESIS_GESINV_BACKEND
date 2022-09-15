@@ -3,12 +3,13 @@ package com.gesinv.gestioninventario.servicio.impl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.gesinv.gestioninventario.exception.InventarioException;
 import com.gesinv.gestioninventario.modelo.Zona;
 import com.gesinv.gestioninventario.repository.IZonaRepo;
 import com.gesinv.gestioninventario.servicio.IZonaServicio;
-
+@Service
 public class ZonaImpl implements IZonaServicio {
 
     @Autowired
